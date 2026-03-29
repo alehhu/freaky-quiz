@@ -614,4 +614,65 @@ const CATEGORIES_POOL = [
             { q: "Quale faraone egizio della IV dinastia commissionò la costruzione della più grande ed imponente piramide della necropoli di Giza?", a: "Cheope (Khufu)", p: 500 }
         ]
     }
+    {
+        id: "myth_greek",
+        title: "Mitologia Greca",
+        questions: [
+            // 100
+            { q: "Quale dio è il re dell'Olimpo e signore del cielo e dei fulmini?", a: "Zeus", p: 100 },
+            { q: "Quale divinità impugna il tridente ed è considerato il dio del mare e dei terremoti?", a: "Poseidone", p: 100 },
+            { q: "Quale dea greca, nata dalla testa di Zeus, è la protettrice della saggezza, delle arti e della guerra giusta?", a: "Atena", p: 100 },
+            { q: "Quale astuto re di Itaca è il protagonista dell'epico viaggio narrato nell'Odissea?", a: "Ulisse (Odisseo)", p: 100 },
+            { q: "Quale mitico eroe ateniese riuscì ad addentrarsi nel Labirinto di Creta e a uccidere il Minotauro?", a: "Teseo", p: 100 },
+            { q: "Quale invincibile guerriero greco, eroe dell'Iliade, aveva il proprio unico punto debole nel tallone?", a: "Achille", p: 100 },
+            { q: "Quale dio greco è il sovrano incontrastato del regno dei morti e del mondo sotterraneo?", a: "Ade", p: 100 },
+            { q: "Come si chiama il leggendario cavallo alato bianco nato dal sangue di Medusa?", a: "Pegaso", p: 100 },
+            { q: "Quale dea olimpica del matrimonio e della fedeltà coniugale è la moglie (e sorella) di Zeus?", a: "Era", p: 100 },
+            { q: "Quale dio greco, dotato di calzari alati, svolge il ruolo di messaggero degli dei e protettore dei viaggiatori?", a: "Ermes", p: 100 },
+            // 200
+            { q: "Quale delle tre Gorgoni era l'unica mortale e aveva serpenti velenosi al posto dei capelli?", a: "Medusa", p: 200 },
+            { q: "Come si chiama il traghettatore che trasporta le anime dei morti attraverso il fiume infernale Acheronte?", a: "Caronte", p: 200 },
+            { q: "Quale dio olimpico è la violenta e sanguinaria personificazione della guerra?", a: "Ares", p: 200 },
+            { q: "Nata dalla spuma del mare a Cipro, quale dea greca incarna l'amore e la bellezza?", a: "Afrodite", p: 200 },
+            { q: "Quale invincibile eroe greco affrontò e strangolò il temibile Leone di Nemea nella sua prima fatica?", a: "Eracle (Ercole)", p: 200 },
+            { q: "Qual è il nome del possente ciclope, figlio di Poseidone, che venne accecato da Ulisse e dai suoi compagni?", a: "Polifemo", p: 200 },
+            { q: "Quale Titano rubò il fuoco agli dei per donarlo all'umanità, finendo incatenato a una roccia del Caucaso?", a: "Prometeo", p: 200 },
+            { q: "Quale giovane precipitò in mare perché volò troppo vicino al sole, facendo sciogliere le sue ali di cera?", a: "Icaro", p: 200 },
+            { q: "Quale dio olimpico, gemello di Artemide, è il signore della luce, delle arti, della musica e della divinazione?", a: "Apollo", p: 200 },
+            { q: "Quale fu la prima donna mortale, famosa per aver aperto per curiosità il vaso che conteneva tutti i mali del mondo?", a: "Pandora", p: 200 },
+            // 300
+            { q: "Quale dea olimpica è la protettrice dell'agricoltura, delle messi e delle stagioni?", a: "Demetra", p: 300 },
+            { q: "Come si chiama il mostruoso cane a tre teste che fa la guardia all'ingresso degli Inferi impedendo l'uscita ai morti?", a: "Cerbero", p: 300 },
+            { q: "Quale potente maga trasformò i compagni di Ulisse in maiali sull'isola di Eea?", a: "Circe", p: 300 },
+            { q: "Quale abile tessitrice mortale fu trasformata in un ragno per aver osato sfidare la dea Atena?", a: "Aracne", p: 300 },
+            { q: "Quale dio dell'Olimpo è associato al vino, all'estasi, all'ebbrezza e al teatro?", a: "Dioniso", p: 300 },
+            { q: "Quale Titano fu condannato da Zeus a reggere per l'eternità la volta celeste sulle proprie spalle?", a: "Atlante", p: 300 },
+            { q: "Quale dio olimpico, zoppo ma eccezionale fabbro e signore del fuoco, era il marito di Afrodite?", a: "Efesto", p: 300 },
+            { q: "Quale gigantesco cacciatore fu ucciso dalla puntura di uno scorpione e successivamente trasformato in una costellazione?", a: "Orione", p: 300 },
+            { q: "Qual è il nome della ninfa del mare (Nereide) che fu madre dell'eroe Achille e cercò di renderlo immortale?", a: "Teti", p: 300 },
+            { q: "Quale eroe della Tessaglia guidò l'equipaggio degli Argonauti alla ricerca del prezioso Vello d'Oro?", a: "Giasone", p: 300 },
+            // 400
+            { q: "Quale eroico principe di Corinto uccise il mostro sputafuoco Chimera cavalcando il destriero Pegaso?", a: "Bellerofonte", p: 400 },
+            { q: "Quale re fu condannato negli Inferi a spingere eternamente un pesante masso sulla cima di un monte, per poi vederlo rotolare giù?", a: "Sisifo", p: 400 },
+            { q: "Quale re fu punito nel Tartaro con una fame e una sete inestinguibili pur essendo immerso in un lago e circondato da frutti?", a: "Tantalo", p: 400 },
+            { q: "Quale eroe greco, figlio di Zeus e Danae, riuscì a decapitare la Gorgone Medusa usando uno scudo riflettente?", a: "Perseo", p: 400 },
+            { q: "Qual è il nome della dea greca del focolare domestico, primogenita di Crono e Rea, nota per la sua natura pacifica?", a: "Estia", p: 400 },
+            { q: "Qual è il nome del celebre indovino cieco della città di Tebe, il cui spirito viene evocato da Ulisse nell'Ade?", a: "Tiresia", p: 400 },
+            { q: "Quale velocissima cacciatrice fu sconfitta in una gara di corsa da Ippomene, che la distrasse lanciando tre mele d'oro?", a: "Atalanta", p: 400 },
+            { q: "Su quale fiume infernale, le cui acque rendevano invulnerabili, gli dei prestavano i loro giuramenti più solenni e irrevocabili?", a: "Stige", p: 400 },
+            { q: "Qual è il nome della figlia di Demetra, rapita da Ade mentre coglieva fiori per diventare la regina degli Inferi?", a: "Persefone (o Core)", p: 400 },
+            { q: "Quale terribile mostro marino a sei teste dimorava in una caverna dello stretto di Messina, opposto al gorgo Cariddi?", a: "Scilla", p: 400 },
+            // 500
+            { q: "Quale re di Micene impose e supervisionò le celebri dodici fatiche affrontate da Eracle come espiazione?", a: "Euristeo", p: 500 },
+            { q: "Come si chiamano le tre Moire, implacabili divinità che tessono, misurano e recidono il filo del destino umano?", a: "Cloto, Lachesi e Atropo", p: 500 },
+            { q: "Quale mostruoso drago-serpente dalle cento teste, figlio di Tifone, faceva la guardia all'albero dei pomi d'oro delle Esperidi?", a: "Ladone", p: 500 },
+            { q: "Quale titano, fratello di Prometeo, sposò Pandora e ha un nome che significa letteralmente 'colui che pensa dopo'?", a: "Epimeteo", p: 500 },
+            { q: "Qual è il nome della ninfa che implorò di essere tramutata in una pianta di alloro per sfuggire all'amore non corrisposto di Apollo?", a: "Dafne", p: 500 },
+            { q: "Come si chiamava il colossale gigante di bronzo che proteggeva le coste dell'isola di Creta, infine sconfitto dagli Argonauti e da Medea?", a: "Talo (o Talos)", p: 500 },
+            { q: "Quale impavido eroe greco, re di Argo, arrivò a ferire in combattimento persino gli dei Ares e Afrodite durante la guerra di Troia?", a: "Diomede", p: 500 },
+            { q: "Come si chiama la Musa greca che presiede e protegge la disciplina della storia, spesso raffigurata con una pergamena in mano?", a: "Clio", p: 500 },
+            { q: "Quale potente divinità primordiale personifica la Notte ed è temuta persino da Zeus, essendo madre di Ipno e Tanato?", a: "Notte (Nyx)", p: 500 },
+            { q: "Chi era il tragico eroe tebano che, per sfuggire a una profezia, finì per uccidere inconsapevolmente il padre Laio e sposare la madre Giocasta?", a: "Edipo", p: 500 }
+        ]
+    }
 ];
