@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Freaky Quiz - Jeopardy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <!-- SCREEN 1: SETUP & DRAFT -->
+        <section id="screen-setup" class="screen">
+            <h1>Freaky Quiz</h1>
+            <div class="setup-teams">
+                <input type="text" id="input-team-a" placeholder="Nome Squadra A" maxlength="15">
+                <input type="text" id="input-team-b" placeholder="Nome Squadra B" maxlength="15">
+            </div>
+            
+            <div class="draft-container">
+                <p id="draft-instruction">Squadra A: Scegli 3 categorie</p>
+                <div id="category-list" class="category-grid">
+                    <!-- Dinamico -->
+                </div>
+            </div>
+
+            <button id="btn-start-game" disabled>Inizia Gioco</button>
+        </section>
+
+        <!-- SCREEN 2: GAME BOARD -->
+        <section id="screen-board" class="screen hidden">
+            <header class="game-header">
+                <div id="stat-team-a" class="team-stat">
+                    <span class="name">---</span>
+                    <span class="score">0</span>
+                </div>
+                <div class="turn-indicator">
+                    <span id="current-turn-label">Tocca a: ---</span>
+                </div>
+                <div id="stat-team-b" class="team-stat">
+                    <span class="name">---</span>
+                    <span class="score">0</span>
+                </div>
+            </header>
+
+            <div id="board-grid" class="board-grid">
+                <!-- Dinamico -->
+            </div>
+
+            <footer class="game-footer">
+                <button id="btn-reset">Reset Partita</button>
+            </footer>
+        </section>
+
+        <!-- SCREEN 3: QUESTION MODAL -->
+        <div id="modal-question" class="modal hidden">
+            <div class="modal-content">
+                <header>
+                    <span id="modal-category">Categoria</span>
+                    <span id="modal-points">100</span>
+                </header>
+                
+                <div class="question-body">
+                    <p id="question-text">Domanda?</p>
+                    <p id="answer-text" class="hidden">Risposta!</p>
+                </div>
+
+                <div class="modal-actions">
+                    <button id="btn-show-answer">Mostra Risposta</button>
+                    <div id="answer-controls" class="hidden">
+                        <button id="btn-correct" class="btn-success">Corretto</button>
+                        <button id="btn-wrong" class="btn-danger">Sbagliato</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
