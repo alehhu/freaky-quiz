@@ -1,6 +1,6 @@
 /**
- * MEGA POOL - Freaky Quiz (Versione 5.0 - SATURAZIONE TOKEN)
- * Target: Liceo Scientifico / Universitario / Esperti / Otaku
+ * MEGA POOL - Freaky Quiz (Versione 6.0 - ACCADEMICA & ESTESA)
+ * Target: Liceo Scientifico / Universitario / Esperti
  */
 const CATEGORIES_POOL = [
     {
@@ -11,23 +11,32 @@ const CATEGORIES_POOL = [
             { q: "Simbolo chimico del Potassio?", a: "K", p: 100 },
             { q: "Gas nobile più leggero?", a: "Elio", p: 100 },
             { q: "Passaggio da stato solido a aeriforme?", a: "Sublimazione", p: 100 },
+            { q: "Cosa trasporta la corrente elettrica nei metalli?", a: "Elettroni", p: 100 },
+            { q: "Qual è il pianeta più vicino al Sole?", a: "Mercurio", p: 100 },
             { q: "Formula dell'Acido Solforico?", a: "H2SO4", p: 200 },
             { q: "Simbolo chimico dell'Argento?", a: "Ag", p: 200 },
             { q: "Chi enunciò il principio di galleggiamento?", a: "Archimede", p: 200 },
             { q: "Unità di misura della frequenza?", a: "Hertz (Hz)", p: 200 },
+            { q: "Formula dell'Acido Cloridrico?", a: "HCl", p: 200 },
+            { q: "Quale scienziato scoprì la legge della gravitazione universale?", a: "Isaac Newton", p: 200 },
             { q: "Formula molecolare del Benzene?", a: "C6H6", p: 300 },
             { q: "Particella con carica neutra nel nucleo?", a: "Neutrone", p: 300 },
             { q: "Chi scoprì l'Elettrone?", a: "J.J. Thomson", p: 300 },
             { q: "Leggi che regolano i circuiti elettrici?", a: "Leggi di Ohm", p: 300 },
+            { q: "Qual è la formula del metano?", a: "CH4", p: 300 },
+            { q: "Chi propose il modello atomico a orbitali quantizzati?", a: "Niels Bohr", p: 300 },
             { q: "Valore della Costante di Planck (ordine di grandezza)?", a: "10^-34 J·s", p: 400 },
             { q: "In che anno Einstein pubblicò la Relatività Generale?", a: "1915", p: 400 },
             { q: "Trasformazione termodinamica a volume costante?", a: "Isocora", p: 400 },
             { q: "Cosa afferma il Principio di Esclusione di Pauli?", a: "Due elettroni non possono avere gli stessi numeri quantici", p: 400 },
+            { q: "Qual è la formula dell'Acido Nitrico?", a: "HNO3", p: 400 },
+            { q: "Chi scoprì il Neutrone nel 1932?", a: "James Chadwick", p: 400 },
             { q: "Valore della velocità della luce nel vuoto (m/s)?", a: "299.792.458 m/s", p: 500 },
             { q: "Chi formulò le equazioni dell'elettromagnetismo?", a: "James Clerk Maxwell", p: 500 },
             { q: "Nome dell'effetto di variazione frequenza per moto relativo?", a: "Effetto Doppler", p: 500 },
             { q: "Grandezza che misura il disordine in termodinamica?", a: "Entropia", p: 500 },
-            { q: "Quale bosone conferisce massa alle particelle?", a: "Bosone di Higgs", p: 500 }
+            { q: "Quale bosone conferisce massa alle particelle?", a: "Bosone di Higgs", p: 500 },
+            { q: "In termodinamica, come si definisce un processo senza scambio di calore?", a: "Adiabatico", p: 500 }
         ]
     },
     {
@@ -37,20 +46,29 @@ const CATEGORIES_POOL = [
             { q: "Anno della Rivoluzione Francese?", a: "1789", p: 100 },
             { q: "Primo Presidente USA?", a: "George Washington", p: 100 },
             { q: "Dittatore romano ucciso alle idi di marzo?", a: "Giulio Cesare", p: 100 },
+            { q: "In che anno è caduto il muro di Berlino?", a: "1989", p: 100 },
+            { q: "Chi era il capo del partito Fascista in Italia?", a: "Benito Mussolini", p: 100 },
             { q: "Anno della scoperta dell'America?", a: "1492", p: 200 },
             { q: "Chi era il Re Sole?", a: "Luigi XIV", p: 200 },
             { q: "In che anno finì la I Guerra Mondiale?", a: "1918", p: 200 },
+            { q: "Chi fu il vincitore della battaglia di Azio?", a: "Ottaviano", p: 200 },
+            { q: "Anno della marcia su Roma?", a: "1922", p: 200 },
             { q: "Pace che chiuse la Guerra dei Trent'anni (1648)?", a: "Pace di Vestfalia", p: 300 },
             { q: "Anno della Presa della Bastiglia?", a: "1789", p: 300 },
             { q: "Chi vinse la Battaglia di Alesia?", a: "Giulio Cesare", p: 300 },
+            { q: "Chi era a capo del governo durante la crisi dei missili di Cuba?", a: "J.F. Kennedy e Nikita Kruscev", p: 300 },
+            { q: "In che anno l'Italia è diventata una Repubblica?", a: "1946", p: 300 },
             { q: "In che anno avvenne il Congresso di Vienna?", a: "1815", p: 400 },
             { q: "Chi era il Cancelliere di Ferro tedesco?", a: "Otto von Bismarck", p: 400 },
             { q: "Battaglia che segnò la fine definitiva di Napoleone?", a: "Waterloo", p: 400 },
+            { q: "Chi firmò i Patti Lateranensi nel 1929?", a: "Benito Mussolini e Pietro Gasparri", p: 400 },
+            { q: "In che anno fu firmata la Magna Carta?", a: "1215", p: 400 },
             { q: "Data esatta della caduta di Costantinopoli?", a: "29 maggio 1453", p: 500 },
             { q: "Anno della Battaglia di Lepanto?", a: "1571", p: 500 },
-            { q: "In che anno fu firmata la Magna Carta?", a: "1215", p: 500 },
             { q: "Anno della Defenestrazione di Praga?", a: "1618", p: 500 },
-            { q: "Data esatta dell'armistizio di Villafranca?", a: "11 luglio 1859", p: 500 }
+            { q: "Data esatta dell'armistizio di Villafranca?", a: "11 luglio 1859", p: 500 },
+            { q: "In che anno avvenne la Pace di Lodi?", a: "1454", p: 500 },
+            { q: "Data esatta della proclamazione del Regno d'Italia?", a: "17 marzo 1861", p: 500 }
         ]
     },
     {
@@ -60,19 +78,29 @@ const CATEGORIES_POOL = [
             { q: "Autore della Repubblica?", a: "Platone", p: 100 },
             { q: "Disse 'Cogito ergo sum'?", a: "Cartesio", p: 100 },
             { q: "Maestro di Alessandro Magno?", a: "Aristotele", p: 100 },
+            { q: "Chi disse 'So di non sapere'?", a: "Socrate", p: 100 },
+            { q: "Chi è l'autore del 'Principe'?", a: "Niccolò Machiavelli", p: 100 },
             { q: "Autore della Critica della ragion pura?", a: "Immanuel Kant", p: 200 },
             { q: "Filosofo del 'rasoio'?", a: "Guglielmo di Ockham", p: 200 },
             { q: "Teorizzò lo Stato come Leviatano?", a: "Thomas Hobbes", p: 200 },
+            { q: "Chi scrisse il 'Discorso sul metodo'?", a: "Cartesio", p: 200 },
+            { q: "Fondatore dell'empirismo inglese moderno?", a: "John Locke", p: 200 },
             { q: "Autore di 'Così parlò Zarathustra'?", a: "Friedrich Nietzsche", p: 300 },
             { q: "I tre stadi di Kierkegaard?", a: "Estetico, Etico, Religioso", p: 300 },
             { q: "Pregiudizi della mente secondo Bacone?", a: "Idola", p: 300 },
+            { q: "Chi scrisse l' 'Etica' dimostrata con metodo geometrico?", a: "Baruch Spinoza", p: 300 },
+            { q: "Chi parlò di 'panta rhei' (tutto scorre)?", a: "Eraclito", p: 300 },
             { q: "Autore del Tractatus Logico-Philosophicus?", a: "Ludwig Wittgenstein", p: 400 },
             { q: "Concetto centrale di Heidegger?", a: "Dasein (Esserci)", p: 400 },
             { q: "Scrisse la Fenomenologia dello spirito?", a: "G.W.F. Hegel", p: 400 },
+            { q: "Chi teorizzò il 'mondo come volontà e rappresentazione'?", a: "Arthur Schopenhauer", p: 400 },
+            { q: "Chi scrisse 'Essere e nulla'?", a: "Jean-Paul Sartre", p: 400 },
             { q: "Scrisse l'Etica con metodo geometrico?", a: "Baruch Spinoza", p: 500 },
             { q: "Il mondo come volontà e rappresentazione?", a: "Arthur Schopenhauer", p: 500 },
             { q: "Autore della Monadologia?", a: "G.W. Leibniz", p: 500 },
-            { q: "Chi formulò l'imperativo categorico?", a: "Immanuel Kant", p: 500 }
+            { q: "Chi formulò l'imperativo categorico?", a: "Immanuel Kant", p: 500 },
+            { q: "Chi scrisse la 'Summa Theologiae'?", a: "Tommaso d'Aquino", p: 500 },
+            { q: "Quale opera di Hegel contiene la dialettica servo-padrone?", a: "Fenomenologia dello spirito", p: 500 }
         ]
     },
     {
@@ -82,19 +110,24 @@ const CATEGORIES_POOL = [
             { q: "Derivata di x²?", a: "2x", p: 100 },
             { q: "Somma angoli interni triangolo?", a: "180°", p: 100 },
             { q: "Area cerchio (formula)?", a: "πr²", p: 100 },
+            { q: "Cos'è un numero primo?", a: "Divisibile solo per 1 e se stesso", p: 100 },
             { q: "Valore di e (Nepero) a due cifre?", a: "2.71", p: 200 },
             { q: "Numero divisibile solo per 1 e se stesso?", a: "Numero Primo", p: 200 },
             { q: "Teorema a² + b² = c²?", a: "Pitagora", p: 200 },
+            { q: "Derivata di sin(x)?", a: "cos(x)", p: 200 },
             { q: "Derivata di ln(x)?", a: "1/x", p: 300 },
             { q: "Logaritmo in base 10 di 1000?", a: "3", p: 300 },
             { q: "Sviluppo binomiale di (a+b)²?", a: "a² + 2ab + b²", p: 300 },
+            { q: "Chi propose il 'metodo di esaustione'?", a: "Archimede", p: 300 },
             { q: "Chi dimostrò i Teoremi di Incompletezza?", a: "Kurt Gödel", p: 400 },
             { q: "Formula dell'area del trapezio?", a: "((B+b)*h)/2", p: 400 },
             { q: "Valore approssimato della Sezione Aurea (φ)?", a: "1.618", p: 400 },
+            { q: "Chi scoprì il calcolo infinitesimale indipendentemente da Newton?", a: "G.W. Leibniz", p: 400 },
             { q: "Enuncia l'Ultimo Teorema di Fermat?", a: "x^n + y^n = z^n non ha soluzioni intere per n > 2", p: 500 },
             { q: "Chi scoprì il calcolo infinitesimale con Newton?", a: "Leibniz", p: 500 },
             { q: "In che anno fu dimostrato il Teorema di Fermat da Andrew Wiles?", a: "1994", p: 500 },
-            { q: "Risolse l'equazione di terzo grado (metodo Tartaglia)?", a: "Gerolamo Cardano", p: 500 }
+            { q: "Risolse l'equazione di terzo grado (metodo Tartaglia)?", a: "Gerolamo Cardano", p: 500 },
+            { q: "Cosa afferma l'ipotesi di Riemann (riguarda quali zeri)?", a: "Zeri della funzione Zeta", p: 500 }
         ]
     },
     {
@@ -104,116 +137,23 @@ const CATEGORIES_POOL = [
             { q: "Protagonista di One Piece?", a: "Monkey D. Luffy", p: 100 },
             { q: "Gatto robot azzurro?", a: "Doraemon", p: 100 },
             { q: "Cosa cerca Goku?", a: "Sfere del Drago", p: 100 },
+            { q: "Chi è il ninja biondo di Konoha?", a: "Naruto Uzumaki", p: 100 },
             { q: "Chi ha diretto 'La città incantata'?", a: "Hayao Miyazaki", p: 200 },
             { q: "Quaderno che uccide chi ha il nome scritto?", a: "Death Note", p: 200 },
             { q: "Studio d'animazione di Totoro?", a: "Studio Ghibli", p: 200 },
+            { q: "Chi è il protagonista di Bleach?", a: "Ichigo Kurosaki", p: 200 },
             { q: "Unità robotica pilotata da Shinji Ikari?", a: "Eva-01", p: 300 },
             { q: "Autore di 'Dragon Ball'?", a: "Akira Toriyama", p: 300 },
             { q: "Come si chiama l'alchimista d'acciaio?", a: "Edward Elric", p: 300 },
+            { q: "Chi è lo spadaccino nero di Berserk?", a: "Guts", p: 300 },
             { q: "Regista di 'Perfect Blue' e 'Paprika'?", a: "Satoshi Kon", p: 400 },
             { q: "In che anno è iniziato il manga di 'One Piece'?", a: "1997", p: 400 },
             { q: "Nome del protagonista di 'Cowboy Bebop'?", a: "Spike Spiegel", p: 400 },
+            { q: "Chi ha scritto 'Devilman'?", a: "Go Nagai", p: 400 },
             { q: "Anno di uscita del film 'Akira'?", a: "1988", p: 500 },
             { q: "Autore del manga 'Berserk'?", a: "Kentaro Miura", p: 500 },
             { q: "In che anno è iniziato il manga di Berserk?", a: "1989", p: 500 },
             { q: "Qual è il vero nome di L in Death Note?", a: "L Lawliet", p: 500 }
-        ]
-    },
-    {
-        id: "lit",
-        title: "Letteratura",
-        questions: [
-            { q: "Autore de I Malavoglia?", a: "Giovanni Verga", p: 100 },
-            { q: "Chi scrisse l'Odissea?", a: "Omero", p: 100 },
-            { q: "Protagonista de La coscienza di Zeno?", a: "Zeno Cosini", p: 200 },
-            { q: "Autore de I fiori del male?", a: "Charles Baudelaire", p: 200 },
-            { q: "Chi scrisse 1984?", a: "George Orwell", p: 300 },
-            { q: "Protagonista de Il fu Mattia Pascal?", a: "Mattia Pascal (Adriano Meis)", p: 300 },
-            { q: "Autore de La terra desolata?", a: "T.S. Eliot", p: 400 },
-            { q: "Vero nome di Italo Svevo?", a: "Ettore Schmitz", p: 400 },
-            { q: "Autore dell'Ulisse (1922)?", a: "James Joyce", p: 500 },
-            { q: "Vero nome di Stendhal?", a: "Marie-Henri Beyle", p: 500 },
-            { q: "Chi scrisse la raccolta Ossi di seppia?", a: "Eugenio Montale", p: 500 }
-        ]
-    },
-    {
-        id: "art",
-        title: "Arte",
-        questions: [
-            { q: "Dipinse la Gioconda?", a: "Leonardo da Vinci", p: 100 },
-            { q: "Dove si trova il David di Michelangelo?", a: "Firenze", p: 100 },
-            { q: "Autore della Nascita di Venere?", a: "Sandro Botticelli", p: 200 },
-            { q: "Stile della Basilica di Saint-Denis?", a: "Gotico", p: 200 },
-            { q: "Scolpì Amore e Psiche?", a: "Antonio Canova", p: 300 },
-            { q: "Dipinse Il Grido?", a: "Edvard Munch", p: 300 },
-            { q: "Architetto della Cupola di San Pietro?", a: "Michelangelo", p: 400 },
-            { q: "Dipinse I coniugi Arnolfini?", a: "Jan van Eyck", p: 400 },
-            { q: "Autore del Cristo Velato?", a: "Giuseppe Sanmartino", p: 500 },
-            { q: "Scolpì l'Apollo e Dafne?", a: "Gian Lorenzo Bernini", p: 500 }
-        ]
-    },
-    {
-        id: "cinema",
-        title: "Cinema",
-        questions: [
-            { q: "Regista di 2001: Odissea nello spazio?", a: "Stanley Kubrick", p: 100 },
-            { q: "Regista di Pulp Fiction?", a: "Quentin Tarantino", p: 100 },
-            { q: "Oscar miglior film 2020?", a: "Parasite", p: 200 },
-            { q: "Regista di Psyco?", a: "Alfred Hitchcock", p: 200 },
-            { q: "Regista de Il Settimo Sigillo?", a: "Ingmar Bergman", p: 300 },
-            { q: "Anno di uscita di Blade Runner?", a: "1982", p: 300 },
-            { q: "Regista di Quarto Potere?", a: "Orson Welles", p: 400 },
-            { q: "Computer di 2001: Odissea nello spazio?", a: "HAL 9000", p: 400 },
-            { q: "Regista di Metropolis (1927)?", a: "Fritz Lang", p: 500 },
-            { q: "Primo film Technicolor a 3 strisce?", a: "Becky Sharp (1935)", p: 500 }
-        ]
-    },
-    {
-        id: "biology",
-        title: "Biologia",
-        questions: [
-            { q: "Molecola della vita?", a: "DNA", p: 100 },
-            { q: "Coppie cromosomi umani?", a: "23", p: 100 },
-            { q: "Morte cellulare programmata?", a: "Apoptosi", p: 200 },
-            { q: "Centrale energetica cellula?", a: "Mitocondrio", p: 200 },
-            { q: "Trasporta ossigeno nel sangue?", a: "Emoglobina", p: 300 },
-            { q: "Unità funzionale del rene?", a: "Nefrone", p: 300 },
-            { q: "Divisione cellule somatiche?", a: "Mitosi", p: 400 },
-            { q: "Leggi eredità?", a: "Gregor Mendel", p: 400 },
-            { q: "Struttura doppia elica DNA?", a: "Watson e Crick", p: 500 },
-            { q: "Organo con alveoli?", a: "Polmone", p: 500 }
-        ]
-    },
-    {
-        id: "astronomy",
-        title: "Astronomia",
-        questions: [
-            { q: "Stella più vicina?", a: "Sole", p: 100 },
-            { q: "Pianeta più grande?", a: "Giove", p: 100 },
-            { q: "Uomo sulla luna (anno)?", a: "1969", p: 200 },
-            { q: "Pianeta con anelli visibili?", a: "Saturno", p: 200 },
-            { q: "Effetto espansione universo?", a: "Redshift", p: 300 },
-            { q: "Distanza Terra-Sole (AU)?", a: "150 milioni km", p: 300 },
-            { q: "Telescopio lanciato nel 2021?", a: "James Webb", p: 400 },
-            { q: "Confine buco nero?", a: "Orizzonte degli eventi", p: 400 },
-            { q: "Classificazione del Sole?", a: "Nana Gialla", p: 500 },
-            { q: "Velocità di fuga Terra?", a: "11.2 km/s", p: 500 }
-        ]
-    },
-    {
-        id: "geography",
-        title: "Geopolitica",
-        questions: [
-            { q: "Stato più popoloso (2023)?", a: "India", p: 100 },
-            { q: "Stato più grande?", a: "Russia", p: 100 },
-            { q: "Stretto Russia-Alaska?", a: "Bering", p: 200 },
-            { q: "Enclave russa in Europa?", a: "Kaliningrad", p: 200 },
-            { q: "Fiume più lungo d'Italia?", a: "Po", p: 300 },
-            { q: "Capitale del Canada?", a: "Ottawa", p: 300 },
-            { q: "Stato con più fusi orari?", a: "Francia (12)", p: 400 },
-            { q: "Punto più profondo Terra?", a: "Abisso Challenger", p: 400 },
-            { q: "Stato senza capitale ufficiale?", a: "Nauru", p: 500 },
-            { q: "Capitale del Kazakistan?", a: "Astana", p: 500 }
         ]
     }
 ];
