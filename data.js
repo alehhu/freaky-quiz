@@ -613,7 +613,7 @@ const CATEGORIES_POOL = [
             { q: "Chi è il rivoluzionario architetto di origine svizzera che teorizzò i cinque punti della nuova architettura e progettò 'Villa Savoye'?", a: "Le Corbusier (Charles-Édouard Jeanneret-Gris)", p: 500 },
             { q: "Quale faraone egizio della IV dinastia commissionò la costruzione della più grande ed imponente piramide della necropoli di Giza?", a: "Cheope (Khufu)", p: 500 }
         ]
-    }
+    },
     {
         id: "myth_greek",
         title: "Mitologia Greca",
